@@ -1,0 +1,92 @@
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  main ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    color: white;
+    background-color: #1D4D72;
+  }
+
+  hr {
+    border: 1px solid black;
+    margin: 40px 0;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+  }
+  
+  h3 {
+    background-color: #1D4D72;
+    color : white;
+    padding: 10px;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+
+  .card p {
+    text-align: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: black;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: inline-block; 
+    padding: 0;
+    text-align: center;
+  }
+
+  nav li {
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
