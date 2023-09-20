@@ -12,6 +12,5 @@ const options = {
 
 const formattedDate = modifiedDate.toLocaleDateString('en-US', options);
 
-
 document.getElementById("year").innerHTML = currentYear;
 dateElement.innerHTML = `<strong>Last Modified: ${formattedDate}</strong>`;

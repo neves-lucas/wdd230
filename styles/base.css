@@ -8,6 +8,10 @@ main {
     list-style: none;
     padding: 0;
   }
+
+  main ul li {
+    margin: 10px 0;
+  }
   
   header {
     text-align: center;
@@ -63,6 +67,7 @@ main {
 
   nav li {
     padding: 10px;
+    margin: 10px;
   }
   
   nav a {
