@@ -20,6 +20,7 @@ main {
     margin-bottom: 40px;
     color: white;
     background-color: #1D4D72;
+    text-shadow: black 2px 2px 2px;
   }
 
   hr {
@@ -36,6 +37,7 @@ main {
     background-color: #1D4D72;
     color : white;
     padding: 10px;
+    text-shadow: black 2px 2px 2px;
   }
 
   .card {
