@@ -2,6 +2,10 @@ main {
     max-width: 800px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 0;
   }
 
   main ul {
@@ -15,12 +19,17 @@ main {
   
   header {
     text-align: center;
-    display: flex;
+    display: grid;
     align-items: center;
     margin-bottom: 40px;
     color: white;
     background-color: #1D4D72;
     text-shadow: black 2px 2px 2px;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 0;
+    margin: auto;
   }
 
   hr {
@@ -49,16 +58,12 @@ main {
     text-align: center;
   }
   
-  main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    padding: 0;
-  }
   
   nav {
     background-color: black;
     text-align: center;
+    max-width: 800px;
+    margin: auto;
   }
   
   nav ul {
