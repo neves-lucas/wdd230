@@ -1,0 +1,58 @@
+html {
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: larger;
+    color: white;
+    background-color: #1D4D72;
+    text-shadow: black 2px 2px 2px;
+    padding: 5px 5px;
+}
+
+main {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.card {
+    border: 2px solid #ccc;
+    border-radius: 4%;
+    background-color: #EEEEEE;
+    padding: 20px;
+    text-align: left;
+    justify-content: center;
+}
+
+.card h3 {
+    background-color: #3A4958;
+    color : white;
+    padding: 10px;
+    text-shadow: black 2px 2px 2px;
+
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+#amazonCard {
+    grid-column: 1 / 3;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    color: white;
+    margin-top: 20px;
+    background-color: #1D4D72;
+    padding: 2px 2px;
+    grid-template-columns: 1fr 1fr;
+}

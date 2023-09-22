@@ -1,0 +1,10 @@
+@media screen and (min-width: 1300px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    #amazonCard {
+        grid-column: 3 / 4;
+    }
+}
