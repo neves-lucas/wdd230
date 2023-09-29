@@ -13,11 +13,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="icon" href="images/favicon.ico">
         <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/hambmenu.js" defer></script>
         <title>Lucas Neves Rocha - WDD 230 - Web Frontend Development</title>
     </head>
     <body>
@@ -26,7 +28,8 @@
             <img src="images/photo_smile.jpg" alt="Lucas Neves Rocha">
         </header>
         <nav>
-            <ul>
+            <button id="menu"></button>
+            <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="chamber/siteplan.html">Site plan</a></li>
                 <li><a href="chamber/">Chamber</a></li>
@@ -38,9 +41,9 @@
         <main>
             <h2>WDD 230: Web Frontend Development</h2>
             <hr>
-            <section class="card">
+            <section id="activitiesCard" class="card">
                 <h3>Learning Activities</h3>
-                <ul>
+                <ul id="acitiviesList">
                     <li>w01: <a href="lesson1/holygrail.html">Holy Layout</a></li>
                     <li>w02: <a href="lesson2/design.html">Design</a> | <a href="lesson1/media-query.html">CSS Media Query</a> | <a href="lesson2/design-principles.html">Design Principles</a></li>
                     <li>w03: <a href="images/css-combinators.png">CSS Combinators</a> | <a href="https://codepen.io/neves-lucas/pen/dyweNQm">CSS Pseudo-Elements</a> | <a href="https://codepen.io/neves-lucas/pen/MWZGJMj">CSS Hamburguer menu</a></li>
@@ -60,6 +63,9 @@
                 <p>Alagoas, Brazil</p>
                 <p id="temperature">[temperature]</p>
                 <p id="visits">[visits]</p>
+            </section>
+            <section id="map" class="card">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15733.251828222037!2d-35.70792235!3d-9.6542779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1695896795111!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </main>
         <footer>
