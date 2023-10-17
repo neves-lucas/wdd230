@@ -1,22 +1,82 @@
-header {
-  overflow: hidden;
-  background-color: #396E94;
-  padding: 20px 10px;
-}
-header img {
-  width: 100px;
-  height: 100px;
+* {box-sizing: border-box;}
+
+:root {
+  --grid-unit: 1rem;
+  --border-radius-base: 0.5rem;
 }
 
-header a {
-  float: left;
-  color: black;
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+}
+
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+}
+a {
+  color: var(--color-fg);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  overflow: hidden;
+  background-color: #1D4D72;
+  padding: 20px 10px;
+  color: white;
+  text-shadow: black 2px 2px 2px;
+}
+
+header button {
+  background-color: #1D4D72;
+  color: white;
+  text-shadow: black 2px 2px 2px;
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 4em; 
+  line-height: 45px;
+  border: none;
+
+  top: 10px;
+  right: 120px;
+  font-size: 4em;
+  cursor: pointer;
+  z-index: 1000;
+  position: absolute;
+}
+
+header a {
+  color: white;
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
+}
+header nav {
+ text-align: center;
+}
+header a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto 0;
+  display: block;
+}
+
+header img {
+  width: 30%;
+  margin: 0 auto 0;
+  display: flex;
 }
 
 header a.logo {
@@ -30,30 +90,39 @@ header a:hover {
 }
 
 header a.active {
-  background-color: white;
-  color: black;
+  background-color: dodgerblue;
+  color: white;
 }
 
 header-right {
-  display: block;
-}
-#menu {
-  display: none;
+  float: right;
 }
 
-@media screen and (max-width: 500px) {
-  header a {
+@media screen and (max-width: 900px) {
+  .header a {
     float: none;
     display: block;
     text-align: left;
   }
-  header-right {
-    float: none;
+  header img {
+    width: 60%;
+    margin: 0 auto 0;
+    display: flex;
   }
-    #menu {
+  
+  header button {
+    top: 10px;
+    right: 120px;
+    font-size: 4em;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+  }
+
+  #menu {
     top: 10px;
     right: 10px;
-    font-size: 2em;
+    font-size: 4em;
     cursor: pointer;
     z-index: 1000;
     position: absolute;
@@ -67,21 +136,17 @@ header-right {
     content: "✖";
   }
   
-  .header-right {
+  .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
   }
   
-  .header-right li {
+  .navigation a {
     display: none;
   }
   
-  .header-right li a {
-    display: block;
-  }
-  
-  .header-right.open li {
+  .navigation.open a {
     display: block;
   }
 }

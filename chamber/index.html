@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,19 +20,25 @@
   <link rel="icon" href="images/favicon.ico">
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/menu.js" defer></script>
+  <script src="scripts/darkmode.js" defer></script>
 </head>
 <body>
     <header>
       <a href="index.html"><img src="images/coconut-tree.png" alt="MCZ Chamber of Commerce"></a>
-      <h1>Maceió</h1>
-      <h2>Chamber of Commerce</h2>
-      <button id="menu"></button>
-      <nav class="header-right">
-        <a class="active" href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Directory</a>
+      <img src="images/logo.png" alt="Maceió Chamber of Commerce">
+      <nav>
+        <button id="menu"></button>
+        <div class="navigation">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Directory</a>
+        </div>
       </nav>
+      <button
+          type="button"
+          data-theme-toggle
+          aria-label="Change to light theme">Change to light theme</button>
     </header>
 
     <main>
@@ -95,7 +101,7 @@
     </main>
 
     <footer>
-      <img src="images/logo.png" alt="MCZ Chamber of Commerce">
+      <img src="images/coconut-tree.png" alt="MCZ Chamber of Commerce">
       <div class="block">
         <h2>Maceió</h2>
         <h4>Chamber of Commerce</h4>
