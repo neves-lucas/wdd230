@@ -32,6 +32,10 @@ header {
   color: white;
   text-shadow: black 2px 2px 2px;
 }
+.navigation a{
+  font-size: 25px;
+  margin: 0 1em;
+}
 
 header button {
   background-color: #1D4D72;
@@ -77,6 +81,7 @@ header img {
   width: 30%;
   margin: 0 auto 0;
   display: flex;
+  align-items: center;
 }
 
 header a.logo {
@@ -144,6 +149,8 @@ header-right {
   
   .navigation a {
     display: none;
+    font-size: 25px;
+    margin: 0 1em;
   }
   
   .navigation.open a {
