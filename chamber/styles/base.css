@@ -103,7 +103,12 @@ header-right {
   float: right;
 }
 
-@media screen and (max-width: 900px) {
+footer img {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 800px) {
   .header a {
     float: none;
     display: block;
@@ -156,12 +161,14 @@ header-right {
   .navigation.open a {
     display: block;
   }
+
 }
 
 body {
   margin: 0;
   padding: 0;
 }
+
 .hero {
   position: relative;
   width: 100vw;
@@ -170,19 +177,26 @@ body {
   justify-content: center;
   align-items: center;
 }
-.hero::before {
-  content: "";
+picture {
   position: absolute;
-  top: 0;
+  top: 0; 
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/hero.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   filter: brightness(60%);
 }
+
+picture source {
+  width: 100%;
+  height: 100%;  
+}
+
+picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero-content {
   position: relative; 
   font-family: "Monserrat", sans-serif;
@@ -190,13 +204,61 @@ body {
   text-align: center;
   margin: 0.625rem;
 }
-.hero-title {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 0;
+
+.herolabel {
+	position: absolute;
+	top: 300px;
+  left: 31%;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
 }
-.hero-subtitle {
-  font-size: 2rem;
-  font-weight: 200;
-  margin-top: 1rem;
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  #small {
+    display: block;
+  }
+  
+  #medium, 
+  #larger {
+    display: none; 
+  }
+}
+
+/* Medium screens */
+@media (min-width: 601px) and (max-width: 1000px) {
+  #small {
+    display: none;
+  }
+
+  #medium {
+    display: block;
+  }
+  
+  #larger {
+    display: none;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1001px) {
+  #small,
+  #medium {
+    display: none; 
+  }
+
+  #larger {
+    display: block;
+  }
 }

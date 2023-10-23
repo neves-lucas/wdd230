@@ -21,11 +21,12 @@
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/menu.js" defer></script>
   <script src="scripts/darkmode.js" defer></script>
+  <script src="scripts/windchill.js" defer></script>
 </head>
 <body>
     <header>
-      <a href="index.html"><img src="images/coconut-tree.png" alt="MCZ Chamber of Commerce"></a>
-      <img src="images/logo.png" alt="Maceió Chamber of Commerce">
+      <a href="index.html"><img src="images/coconut-tree.webp" alt="MCZ Chamber of Commerce"></a>
+      <img src="images/logo.webp" alt="Maceió Chamber of Commerce">
       <nav>
         <button id="menu"></button>
         <div class="navigation">
@@ -43,11 +44,30 @@
 
     <main>
       <div class="hero">
-        <div class="hero-content">
-          <button type="button" class="hero-button" onclick="location.href='#'">
-            Join us
-       </button>
-        </div>
+
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/wdd230-org.webp">
+          <img src="images/wdd230-org.webp" alt="small">
+          <div class="herolabel"><p id="small">small</p></div>
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1000px)" srcset="images/wdd230-org.webp">
+          <img src="images/wdd230-org.webp" alt="medium">
+          <div class="herolabel"><p id="medium">medium</p></div>
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1500px)" srcset="images/wdd230-org.webp">
+          <img src="images/wdd230-org.webp" alt="large">
+          <div class="herolabel"><p id="larger">larger</p></div>
+        </picture>
+        
+          <div class="hero-content">
+            <button type="button" class="hero-button" onclick="location.href='#'">
+              Join us
+         </button>
+          </div>
       </div>
 
       <section id="events" class="card">
@@ -61,7 +81,7 @@
       <section id="weather" class="card">
         <h3>Weather</h3>
         <hr>
-        <img src="images/weather-icon.png" alt="Weather icon">
+        <img src="images/weather-icon.webp" alt="Weather icon">
         <p>Humidity: </p>
         <p>Wind Chill: </p>
         <span id="current-temp"></span>
@@ -101,7 +121,7 @@
     </main>
 
     <footer>
-      <img src="images/coconut-tree.png" alt="MCZ Chamber of Commerce">
+      <img src="images/coconut-tree.webp" alt="MCZ Chamber of Commerce">
       <div class="block">
         <h2>Maceió</h2>
         <h4>Chamber of Commerce</h4>

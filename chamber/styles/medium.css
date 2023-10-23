@@ -1,0 +1,21 @@
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .herolabel {
+    position: absolute;
+    top: 300px;
+    left: 31%;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+  }
+  
+  .herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family:"Great Vibes", serif;
+    content: "test";
+  }
+}
