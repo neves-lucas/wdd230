@@ -17,6 +17,10 @@ main ul li {
   margin: 10px 0;
 }
 
+.hero img {
+  width:auto;
+}
+
 header {
   text-align: center;
   display: grid;
