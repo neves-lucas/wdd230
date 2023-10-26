@@ -1,19 +1,14 @@
-// Check if visits count exists in localStorage
-let visitsCount = localStorage.getItem('visitsCount');
+const visitsDisplay = document.querySelector(".visits");
 
-// If not, set counter to 0
-if(!visitsCount) {
-  visitsCount = 0;
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
 }
 
-// Increment counter
-visitsCount++;
+numVisits++;
 
-// Update localStorage
-localStorage.setItem('visitsCount', visitsCount); 
+localStorage.setItem("numVisits-ls", numVisits);
 
-// Get element to display count
-const countEl = document.getElementById('visits');
-
-// Display updated count
-countEl.textContent = visitsCount;
