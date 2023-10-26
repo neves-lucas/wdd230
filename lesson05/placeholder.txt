@@ -1,8 +1,0 @@
-fetch('book-of-mormon.json')
-  .then(response => response.json())
-  .then(data => {
-    const book = data.book;
-    const chapter = data.chapter;
-    const reference = data.reference;
-    const verse = data.verse;
-  });
