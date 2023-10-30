@@ -1,0 +1,45 @@
+:root {
+	--back: rgb(2, 2, 2);
+  --back2: rgb(51, 51, 51);
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	font-size: .85rem;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+th, td {
+	padding: 7px 15px;
+
+}
+
+tr:first-child th, .highlight {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+#blackslot {
+  background-color: var(--back);
+  color: var(--forelight);
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+  color: var(--forelight);
+}
+
+tr td:first-child {
+  font-size: larger;
+  font-weight: bold;
+}
