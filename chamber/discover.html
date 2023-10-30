@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lucas Neves Rocha">
+  <meta name="description" content="Chamber of commerce website for MCZ">
+  <meta property="og:title" content="MCZ Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://imgmd.net/images/c_limit%2Cw_1200/v1/guia/1573864/maceio.jpg">
+  <meta property="og:url" content="https://neves-lucas.github.io/wdd230/chamber/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <title>MCZ Chamber of Commerce Website</title>
+  <link rel="icon" href="images/favicon.ico">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/darkmode.js" defer></script>
+  <script src="scripts/windchill.js" defer></script>
+  <script src="scripts/visitcounter.js" defer></script>
+</head>
+<body>
+    <header>
+      <a href="index.html"><img src="images/coconut-tree.webp" alt="MCZ Chamber of Commerce"></a>
+      <img src="images/logo.webp" alt="Maceió Chamber of Commerce">
+      <nav>
+        <button id="menu"></button>
+        <div class="navigation">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a> 
+          <a href="#">Directory</a>
+        </div>
+      </nav>
+      <button
+          type="button"
+          data-theme-toggle
+          aria-label="Change to light theme"></button>
+    </header>
+
+    <main>
+      <div class="sidebar">
+        <div class="sideCard">
+            <h3>Attractions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla quisquam voluptatum delectus, optio aut. Quisquam, nisi. Fugiat, quo. Animi est minima blanditiis ipsa magni exercitationem aut cupiditate veritatis?</p>
+        </div>
+
+        <div class="sideCard">
+            <h3>[Placeholder]</h3>
+            <p>placeholder</p>
+        </div>
+
+        <div class="sideCard">
+            <h3>Information</h3>
+            <p><span class="label">Number of visits: </span><span class="visits"></span></p>
+        </div>
+    </div>
+
+      <img src="images/maceio1.webp" alt="alt placeholder" class= "photo" loading="lazy">
+      <img src="images/maceio2.webp" alt="alt placeholder" class= "photo" loading="lazy">
+      <img src="images/maceio3.webp" alt="alt placeholder" class= "photo" loading="lazy">
+      <img src="images/maceio4.webp" alt="alt placeholder" class= "photo" loading="lazy">
+      <img src="images/maceio5.webp" alt="alt placeholder" class= "photo" loading="lazy">
+      <img src="images/maceio6.webp" alt="alt placeholder" class= "photo" loading="lazy">
+    </main>
+
+    <footer>
+      <img src="images/coconut-tree.webp" alt="MCZ Chamber of Commerce">
+      <div class="block">
+        <h2>Maceió</h2>
+        <h4>Chamber of Commerce</h4>
+        <p>Av. da Paz, 1109 - Centro, Maceió - AL, 57020-440</p>
+      </div>
+      <div class="block">
+        <p>placeholder@gmail.com</p>
+        <p>(82) 99999-9999</p>
+        <img src="#" alt="Location icon">
+      </div>
+      <hr>
+      <p>&copy;<span id="year"></span> Maceió Chamber |</p>
+      <p><strong> Lucas Neves Rocha </strong></p>
+      <p>WDD 230 Project</p>
+      <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

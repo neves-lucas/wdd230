@@ -22,14 +22,16 @@
         grid-column: 1/4;
     }
 
+    #info {
+        width: 300px;
+
+    }
+
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
-    }
-
-    .card {
-        grid-column: 1/2;
     }
 
     section ul li {
@@ -52,7 +54,6 @@
         margin: auto;
         color: white;
         margin-top: 20px;
-        max-width: 800px;
         grid-column: 1/4;
     }
     #map{

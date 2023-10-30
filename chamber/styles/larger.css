@@ -1,8 +1,9 @@
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1201px) {
 
   header img {
     width: 20%;
   }
 
+  .photo:hover {box-shadow: 0 0 50px #333;}
 }
   
