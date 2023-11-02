@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+      <form method="get" action="record.html">
+
+        <legend>Form Build</legend>
+        <p class="smaller">*️⃣ Indicates a required field</p>
+
+        <label for="username" class="req">Username: <input type="text" id="uname" name="username" required></label>
+
+        <label for="password" class="req">Password: <input type="password" id="password" name="password" pattern="[A-Za-z]{8}" placeholder="At least 8 characters long. No numbers." required></label>
+
+        <label for="password2" class="req">Re-enter your Password: <input type="password" id="password2" name="password" pattern="[A-Za-z]{8}" required></label>
+
+        <label for="email" class="req">Email: <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="example@email.com" title="Please enter a valid email address." required></label>
+
+        <label for="rate">Rating: <input type="text" id="rate" name="rate" list="l1" required><abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+
+        <input type="submit" value="Submit Application">
+      </form>
+
+      <datalist id="l1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </datalist>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
