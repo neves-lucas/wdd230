@@ -1,0 +1,17 @@
+{
+  "familyName" : "Neves",
+  "dateMoved" : "2023-01-01",
+  "numberOfPeople" : "2",
+  "visitedBishopric" : "true",
+  "members" : [
+    {
+      "name" : "Lucas Neves",
+      "gender" : "male",
+      "birthDate" : "1998-08-07"
+    },
+    {
+      "name" : "Mariana Neves",
+      "gender" : "female",
+      "birthDate" : "2000-05-17"
+    }
+]}
