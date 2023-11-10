@@ -1,5 +1,5 @@
 const activityList = document.querySelector('#activitiesList');
-const url = "https://neves-lucas.github.io/wdd230/links.json";
+const url = "https://neves-lucas.github.io/wdd230/data/links.json";
 
 async function getList(){
     const response = await fetch(url);

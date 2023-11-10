@@ -200,5 +200,6 @@ iframe {
 
   main li {
     list-style: none;
+    margin: 15px;
   }
 }
