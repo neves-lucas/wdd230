@@ -1,0 +1,12 @@
+{
+  "lessons": [
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson01/media-query.html",
+      "title" : "01: Media Query"
+    },
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson02/design.html",
+      "title" : "02a: Design Priciples"
+    }
+  ]
+}
