@@ -1,17 +1,40 @@
-{ 
+{
   "lessons": [
     {
-      "lesson": "02",
-      "links": [
-        {
-          "url":"lesson02/mediaquery.html",
-          "title":"Media Queries"
-        },
-        {
-          "url":"lesson02/design-principles.html",
-          "title":"Design Principles Document"
-        }
-      ]
+      "url" : "https://neves-lucas.github.io/wdd230/lesson1/media-query.html",
+      "title" : "W01: Media Query"
+    },
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson02/design.html",
+      "title" : "W02a: Design"
+    },
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson2/design-principles.html",
+      "title" : "W02b: Design Priciples"
+    },
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson03/chamber-site-plan.html",
+      "title" : "W03: Chamber Site Plan"
+    },
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson05/bom.html",
+      "title" : "W05: Book of Mormon"
+    },
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson07/bom.html",
+      "title" : "W07a: BoM"
+    },
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson07/lazyload.html",
+      "title" : "W07b: Lazy Loading"
+    },
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson08/tablebuild.html",
+      "title" : "W08: Table Build"
+    },
+    {
+      "url" : "https://neves-lucas.github.io/wdd230/lesson08/prophets.html",
+      "title" : "W09: Prophets"
     }
   ]
 }
