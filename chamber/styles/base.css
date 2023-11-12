@@ -17,6 +17,12 @@
 a {
   color: var(--color-fg);
 }
+header,
+main,
+footer {
+  max-width: 100%;
+  margin: 0;
+}
 
 body {
   background-color: var(--color-bg);
@@ -35,7 +41,7 @@ h3 {
 
 main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -100,6 +106,16 @@ button {
   grid-column: 1/2;
 }
 
+.card, .spotlight {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.spotlight h4{
+  font-size: 20px;
+}
+
 .sideCard {
   padding: 12px;
   margin: 10px auto;
@@ -117,7 +133,14 @@ header {
   padding: 20px 10px;
   color: white;
   text-shadow: black 2px 2px 2px;
+  text-align: center;
 }
+
+.chamberName {
+  font-size: 30px;
+
+}
+
 .navigation a{
   font-size: 25px;
   margin: 0 1em;
@@ -187,6 +210,14 @@ header a.active {
 
 header-right {
   float: right;
+}
+
+footer {
+  background-color: #1D4D72;
+  padding: 20px 10px;
+  color: white;
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
 }
 
 footer img {
@@ -292,8 +323,8 @@ picture img {
 }
 
 .herolabel {
-	position: absolute;
-	top: 300px;
+	position: relative;
+	top: -200px;
   left: 31%;
 	background: radial-gradient(#fff, #4D5B97);
 	border: 1px solid rgba(0,0,0,.75);
@@ -347,4 +378,57 @@ picture img {
   #larger {
     display: block;
   }
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
 }

@@ -4,6 +4,13 @@
     width: 20%;
   }
 
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer img { 
+    
+  }
   .photo:hover {box-shadow: 0 0 50px #333;}
 }
   

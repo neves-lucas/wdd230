@@ -19,5 +19,15 @@
     content: "test";
   }
 
+  .card, .spotlight, h2 {
+    grid-column: 1/2;
+  }
+
+
+  main {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+  }
+
   .photo:hover {box-shadow: 0 0 50px #333;}
 }
