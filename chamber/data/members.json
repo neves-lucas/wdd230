@@ -1,6 +1,5 @@
 {
   "members": [
-    [
       {
         "name": "Acme Inc.",
         "address": "123 Main Street, Anytown, USA 12345",
@@ -64,6 +63,5 @@
         "membershipLevel": "Gold", 
         "description": "Importer and distributor of gourmet foods"
       }
-    ]
   ]
 }

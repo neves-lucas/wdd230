@@ -1,5 +1,7 @@
 const main = document.querySelector('#directory');
 const url = "https://neves-lucas.github.io/wdd230/chamber/data/members.json";
+const gridBtn = document.querySelector('#grid');
+const listBtn = document.querySelector('#list');
 
 async function getCards(){
     const response = await fetch(url);
@@ -7,6 +9,16 @@ async function getCards(){
 
     displayMembers(data.members);
 }
+
+gridBtn.addEventListener('click', () => {
+    main.classList.add('grid');
+    main.classList.remove('list');
+});
+
+listBtn.addEventListener('click', () => {
+    main.classList.add('list');
+    main.classList.remove('grid');
+})
 
 function displayMembers(arr){
     arr.forEach((member) =>{
@@ -18,6 +30,7 @@ function displayMembers(arr){
         let link = document.createElement('a');
         let description = document.createElement('p');
         let grade = document.createElement('p');
+        card.classList.add('card');
 
         header.innerHTML = member.name;
         logo.src = member.imagerl;
@@ -29,7 +42,7 @@ function displayMembers(arr){
         address.textContent = member.address;
         phone.textContent = member.phone;
         description.textContent = member.description;
-        grade.innerHTML = member.membership;
+        grade.innerHTML = member.membershipLevel;
 
         card.appendChild(header);
         card.appendChild(logo);
@@ -41,31 +54,7 @@ function displayMembers(arr){
 
         main.append(card);
 
-
-
-
     })
 }
-
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
-}
-
 
 getCards();
