@@ -12,6 +12,15 @@ main {
   grid-column: 1/2;
 }
 
+#weather-icon {
+  width: 20%;
+}
+
+#weather, h4 {
+  text-align: center;
+}
+
+
 main img {
   grid-column: 2/4;
   width: 100%;

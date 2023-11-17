@@ -4,6 +4,11 @@
         text-shadow: black 2px 2px 2px;
         min-width: 1500px;
     }
+
+    #weather-icon {
+        width: 30%;
+    }
+
     nav {
         background-color: black;
         text-align: center;
@@ -46,8 +51,8 @@
     }
 
     #info {
-        width: 300px;
-
+        width: 90%;
+        
     }
 
     main {
