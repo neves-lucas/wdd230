@@ -16,6 +16,10 @@ main {
   width: 20%;
 }
 
+section img {
+  width: 20px;
+}
+
 #weather, h4 {
   text-align: center;
 }

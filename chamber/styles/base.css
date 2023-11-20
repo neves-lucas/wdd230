@@ -8,11 +8,13 @@
 [data-theme="light"] {
   --color-bg: #ffffff;
   --color-fg: #000000;
+  --color-cg: #EEEEEE;
 }
 
 [data-theme="dark"] {
   --color-bg: #000000;
   --color-fg: #ffffff;
+  --color-cg: #353535;
 }
 a {
   color: var(--color-fg);
@@ -22,6 +24,14 @@ main,
 footer {
   max-width: 100%;
   margin: 0;
+}
+
+#weather-icon {
+  width: 20%;
+}
+
+#weather, h4 {
+  text-align: center;
 }
 
 body {
@@ -109,7 +119,7 @@ button {
 .card, .spotlight {
   border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #eee;
+	background-color: var(--color-cg);
 }
 
 .spotlight h4{
@@ -138,7 +148,7 @@ header {
 
 .chamberName {
   font-size: 30px;
-
+  margin: 0;
 }
 
 .navigation a{
@@ -232,9 +242,10 @@ footer img {
     text-align: left;
   }
   header img {
-    width: 60%;
+    width: 100%;
     margin: 0 auto 0;
-    display: flex;
+    display: block;
+    object-fit: contain;
   }
   
   header button {
@@ -289,7 +300,7 @@ body {
 .hero {
   position: relative;
   width: 100vw;
-  height: 30vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
