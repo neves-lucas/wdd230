@@ -33,7 +33,7 @@ function displayMembers(arr){
         card.classList.add('card');
 
         header.innerHTML = member.name;
-        logo.src = member.imagerl;
+        logo.src = member.image;
         logo.alt = `image of ${member.name} logo`;
         logo.loading = "lazy";
         logo.width = "375";

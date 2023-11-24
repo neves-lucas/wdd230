@@ -1,7 +1,6 @@
 const url = "https://api.openweathermap.org/data/2.5/forecast?lat=-9.65&lon=-35.71&units=metric&appid=b13e30d4a31a8fad7a53ac1b0d60f926";
 const weatherInfo = document.querySelector('#weather');
 
-
 async function getData(){
     try{
         const response = await fetch(url);
@@ -31,11 +30,7 @@ function loadForecast(data){
    const iconSource = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
    const todayDesc = data.list[0].weather[0].description;
    
-
-
    speed.textContent = `Wind Speed: ${data.list[0].wind.speed} mph`;
-   
-
 
    weatherHead.textContent = "Current Weather"
    forecastHead.textContent = "3-Day Forecast"
@@ -43,18 +38,22 @@ function loadForecast(data){
    dayIcon.setAttribute('alt', `Icon for ${todayDesc}`);
    dayNum.innerHTML = `${Math.round(data.list[0].main.temp)}&deg;C`;
    let indexOfTempType = dayNum.innerHTML.length - 1;
-   let temperature = Number(data.list[0].main.temp);
-   let tC;
+   const windSpeed = data.list[0].wind.speed;   
+   let temperature = data.list[0].main.temp;
+   let windChill;
    if (dayNum[indexOfTempType] == "C"){
     temperature = ((9/5) * temperature) + 32;
    }
-   if (temperature <= 50 && speed > 3){
+   if (temperature <= 50 && windSpeed >= 3){
     
-    tC = `${Math.round(35.74 + (0.6215 * temperature) - (35.75 * speed**0.16) + (0.4275 * temperature * speed ** 0.16))}&deg;F`;
-   }else{
-    tC = "N/A"
+    windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+
+    windChill = Math.round(windChill);
    }
-   chill.textContent = `Wind Chill: ${tC}`;
+   else {
+    windChill = "N/A"
+   }
+   chill.textContent = `Wind Chill: ${windChill}°C`;
    dayDesc.textContent = `  ${todayDesc}`;
    weatherNow.appendChild(weatherHead)
    weatherNow.appendChild(dayIcon);
@@ -83,7 +82,7 @@ function loadForecast(data){
      let fDesc = ` ${data.list[i].weather[0].description}`;
      forecastIcon.setAttribute('src', forecastIconImage);
      forecastIcon.setAttribute('alt', `icon for ${fDesc}`);
-     forecastNum.innerHTML = `${data.list[i].main.temp}&deg;F`
+     forecastNum.innerHTML = `${data.list[i].main.temp}&deg;C`
      forecastDesc.textContent = fDesc;
      
      forecastWeather.appendChild(forecastDate);
@@ -92,12 +91,7 @@ function loadForecast(data){
      forecastWeather.appendChild(forecastDesc);
      weatherCard.appendChild(forecastWeather);
      i += 8;    
-
    } 
-   
-
-   
   weatherInfo.append(weatherCard);
 }
-
 getData();

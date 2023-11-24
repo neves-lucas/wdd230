@@ -2,18 +2,22 @@ main {
   max-width: 800px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
   grid-gap: 20px;
   padding: 0;
+  justify-content: space-between;
+}
+
+main h2 {
+  text-align: center;
 }
 
 .sidebar {
   grid-column: 1/2;
 }
 
-#weather-icon {
-  width: 20%;
+#card img {
+  max-width: 200px;
 }
 
 section img {
@@ -23,7 +27,6 @@ section img {
 #weather, h4 {
   text-align: center;
 }
-
 
 main img {
   grid-column: 2/4;
@@ -38,6 +41,10 @@ main ul {
 
 main ul li {
   margin: 10px 0;
+}
+
+.benefits {
+  text-align: center;
 }
 
 header {
@@ -110,6 +117,7 @@ nav a {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
 h1, h2, h3 {
@@ -147,24 +155,6 @@ img {
   min-width: 800px;
 }
 
-.herolabel {
-	position: absolute;
-	top: 300px;
-  left: 250px;
-	background: radial-gradient(#fff, #4D5B97);
-	border: 1px solid rgba(0,0,0,.75);
-	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
-}
-
-.herolabel p {
-	margin: 0;
-	padding: .25rem;
-	font-weight: 700;
-	font-size: 2rem;
-	font-family:"Great Vibes", serif;
-}
 iframe {
   display: block;
   padding-bottom: 10px;
@@ -175,7 +165,7 @@ iframe {
 }
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
   #menu {
     top: 10px;
     right: 10px;

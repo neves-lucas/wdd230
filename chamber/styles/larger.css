@@ -1,4 +1,4 @@
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
 
   header img {
     width: 20%;
@@ -8,8 +8,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  section img {
-    width: 5%;
+
+  main h2 {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
   }
   .photo:hover {box-shadow: 0 0 50px #333;}
 }

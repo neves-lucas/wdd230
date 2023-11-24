@@ -1,34 +1,20 @@
-@media screen and (min-width: 900px) and (max-width: 1200px) {
-  .herolabel {
-    position: absolute;
-    top: 300px;
-    left: 31%;
-    background: radial-gradient(#fff, #4D5B97);
-    border: 1px solid rgba(0,0,0,.75);
-    padding: 1.5rem;
-    box-shadow: 0 0 3rem #fff;
-    opacity: 0.75;
-  }
-  
-  .herolabel p {
-    margin: 0;
-    padding: .25rem;
-    font-weight: 700;
-    font-size: 2rem;
-    font-family:"Great Vibes", serif;
-    content: "test";
-  }
+@media screen and (min-width: 900px) {
 
-  .card, .spotlight, h2 {
-    grid-column: 1/2;
-  }
-  
-
-
+  main h2 {
+    text-align: center;
+  }  
   main {
-    display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
   }
+
+  main section {
+    margin: 0 10px;
+    height: fit-content;
+    justify-content: right;
+    align-items: right;
+  }
+
 
   .photo:hover {box-shadow: 0 0 50px #333;}
 }

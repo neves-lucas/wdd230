@@ -5,7 +5,7 @@
         "address": "123 Main Street, Anytown, USA 12345",
         "phone": "555-123-4567", 
         "website": "www.acme.com",
-        "image": "acme-logo.png",
+        "image": "/images/acme-inc.webp",
         "membershipLevel": "Gold", 
         "description": "Maker of anvils and other heavy duty hardware"
       },
@@ -14,7 +14,7 @@
         "address": "456 Oak Avenue, Metropolis, USA 23456", 
         "phone": "555-234-5678",
         "website": "www.globexcorp.com",
-        "image": "globex-logo.jpg",
+        "image": "/images/globex.webp",
         "membershipLevel": "Silver",
         "description": "Conglomerate with interests in technology, health care, and agriculture"
       },
@@ -23,7 +23,7 @@
         "address": "789 Elm Street, Gotham City, USA 34567",
         "phone": "555-345-6789",
         "website": "www.contoso.com",
-        "image": "contoso-logo.gif",
+        "image": "/images/contoso.webp",
         "membershipLevel": "Bronze",
         "description": "Pharmaceutical company focused on genetic research" 
       },
@@ -32,7 +32,7 @@
         "address": "101 Pine Road, Capital City, USA 45678",
         "phone": "555-456-7890",
         "website": "www.adventureworks.com", 
-        "image": "adventureworks-logo.png",
+        "image": "/images/adventureWorks.webp",
         "membershipLevel": "Gold",
         "description": "Maker of outdoor sporting goods and apparel"
       },
@@ -41,7 +41,7 @@
         "address": "222 Maple Lane, Industry Town, USA 56789",
         "phone": "555-567-8901",
         "website": "www.fabrikam.com",
-        "image": "fabrikam-logo.jpg",
+        "image": "/images/fabrikam.webp",
         "membershipLevel": "Silver",
         "description": "Manufactures industrial equipment and robotics"
       },
@@ -50,7 +50,7 @@
         "address": "333 Cedar Blvd, Commerce City, USA 67890", 
         "phone": "555-678-9012",
         "website": "www.litware.com",
-        "image": "litware-logo.png",
+        "image": "images/litware.webp",
         "membershipLevel": "Bronze",
         "description": "Produces software and electronics for consumers"
       },
@@ -59,7 +59,7 @@
         "address": "444 Pine Street, Capital City, USA 78901",
         "phone": "555-789-0123",
         "website": "www.northwind.com",
-        "image": "northwind-logo.gif",
+        "image": "/images/northwind.webp",
         "membershipLevel": "Gold", 
         "description": "Importer and distributor of gourmet foods"
       }

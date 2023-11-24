@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Lucas Neves Rocha">
-  <meta name="description" content="Chamber of commerce website for MCZ">
-  <meta property="og:title" content="MCZ Chamber of Commerce">
+  <meta name="description" content="The Maceió Chamber of commerce website was made to be a postcard for businesses and visitors. It serves to let people know upcoming events and good places to visit.">
+  <meta property="og:title" content="MCZ Chamber of Commerce website, has the purpose to serve the local community members and business of Maceió.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://imgmd.net/images/c_limit%2Cw_1200/v1/guia/1573864/maceio.jpg">
   <meta property="og:url" content="https://neves-lucas.github.io/wdd230/chamber/">
@@ -21,7 +21,6 @@
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/menu.js" defer></script>
   <script src="scripts/darkmode.js" defer></script>
-  <script src="scripts/windchill.js" defer></script>
   <script src="scripts/weather.js" defer></script>
 </head>
 <body>
@@ -34,9 +33,8 @@
         <button id="menu"></button>
         <div class="navigation">
           <a href="index.html">Home</a>
-          <a href="#">About</a>
+          <a href="discover.html">Discover</a>
           <a href="join.html">Join us</a>
-          <a href="#">Contact</a> 
           <a href="directory.html">Directory</a>
         </div>
       </nav>
@@ -50,21 +48,8 @@
       <div class="hero">
 
         <picture>
-          <source media="(min-width: 800px)" srcset="images/wdd230-org.webp">
-          <img src="images/wdd230-org.webp" alt="small">
-         <!-- <div class="herolabel"><p id="small">small</p> </div> -->
-        </picture>
-
-        <picture>
-          <source media="(min-width: 1000px)" srcset="images/wdd230-org.webp">
-          <img src="images/wdd230-org.webp" alt="medium">
-        <!-- <div class="herolabel"><p id="medium">medium</p></div> -->
-        </picture>
-
-        <picture>
-          <source media="(min-width: 1500px)" srcset="images/wdd230-org.webp">
-          <img src="images/wdd230-org.webp" alt="large">
-          <!-- <div class="herolabel"><p id="larger">larger</p></div> -->
+          <source media="(min-width: 1200px)" srcset="images/maceio-small.webp">
+          <img src="images/maceio-small.webp" alt="large">
         </picture>
         
           <div class="hero-content">
@@ -77,40 +62,39 @@
       <section id="events" class="card">
         <h3>Events</h3>
         <hr>
-        <p>This is a placeholder for an event. Monday at 10 a.m.</p>
+        <p>This is a placeholder for an event. Monday at 10 a.m.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptatibus architecto, sit asperiores magni provident dolorum iure ex, minus dolore non illo odio sunt voluptatem natus. Architecto reiciendis culpa similique?</p>
         <a href="#">more info ...</a>
         <hr>
       </section>
 
       <section id="weather" class="card"></section>
+    </div>
 
       <h2>Spotlights</h2>
 
+      <div class="container">
       <section class="spotlight">
-        <img src="#" alt="Spotlight 1 icon">
         <h4>🚛 Thankful Transport</h4>
         <p>"We get it there for you!"</p>
         <a href="#">hello@thankfultransport.com</a>
-        <a href="#">(82) 99999-9999</a>
-        <a href="#">placeholderwebsite.com</a>
+        <p>(82) 96935-9829</p>
+        <a href="#">thankfultransport.com</a>
       </section>
 
       <section class="spotlight">
-        <img src="#" alt="Spotlight 2 icon">
         <h4>☀️ Code in the sun</h4>
         <p>After school coding in the sun!</p>
         <a href="#">contact@suncode.com</a>
-        <a href="#">(82) 99999-9999</a>
-        <a href="#">placeholderwebsite.com</a>
+        <p>(82) 92598-2489</p>
+        <a href="#">codeinthesun.com</a>
       </section>
 
       <section class="spotlight">
-        <img src="#" alt="Spotlight 3 icon">
         <h4>🥥Coco party</h4>
         <p>Let's get some coconuts on the beach!</p>
         <a href="#">get@coconut.com</a>
-        <a href="#">(82) 99999-9999</a>
-        <a href="#">placeholderwebsite.com</a>
+        <p>(82) 93879-9418</p>
+        <a href="#">cocoparty.com</a>
       </section>
     </main>
 
