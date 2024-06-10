@@ -16,20 +16,17 @@ header {
 
 nav {
   grid-column: 1 / 3;
-  background-color: lightblue;
-  padding: 1rem;
+  background-color: #bed;
 }
 
 main {
   background: coral;
   height: 100%;
-  padding: 1rem;
 }
 
-aside {
+.right-sidebar {
   background: yellow;
   grid-column: 2 / 3;
-  padding: 1rem;
 }
 
 footer {
@@ -37,4 +34,9 @@ footer {
   padding: 2rem;
   text-align: center;
   grid-column: 1 / 3;
+}
+
+nav, main, 
+.right-sidebar {
+  padding: 1rem;
 }
